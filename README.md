@@ -1,17 +1,15 @@
 ## Golang Wasm Hello World
 A hello world implementation of golang compiled to web assembly.
 
-1. To build:
+#### To build:
+1. Build the main program
 ```
 $ GOOS=js GOARCH=wasm go build -o public/main.wasm
 ```
-2. Start the server that serves the public folder:
-
-3. 
+2. Start the server serving index.html, main.wasm, and wasm_exec.js:
 ```
 $ go run utilities/http-server.go
 ```
+3. Open `localhost:12000/index.html` in your browser. 
 
-4. Open `localhost:12000/index.html` in your browser. 
-
-With these steps in place, you should see "Hello from Web Assembly" in the developer console of your browser. If you do, you have compiled and ran your first go program in the browser. 
+With these steps in place, you should see "Hello from Web Assembly" in the developer console of your browser every second. Check out main.go to see how it works.
