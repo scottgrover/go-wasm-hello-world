@@ -1,5 +1,5 @@
 // A basic HTTP server.
-// By default, it serves the current working directory on port 8080.
+// By default, it serves the current working directory on port 12000.
 package main
 
 import (
