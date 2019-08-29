@@ -2,7 +2,7 @@
 A hello world implementation of golang compiled to web assembly.
 
 #### To build:
-1. Build the main program
+1. Build the main program (ensure you've changed your directory to the project folder)
 ```
 $ GOOS=js GOARCH=wasm go build -o public/main.wasm
 ```
